@@ -1,30 +1,6 @@
-/*
-  ESP32 + ST7789 (GMT020-02-8P) - Plain text display
-  --------------------------------------------------
-  Libraries needed (install via Arduino Library Manager):
-    - Adafruit GFX Library
-    - Adafruit ST7735 and ST7789 Library
-
-  GMT020-02-8P is a 240x240 IPS panel using the ST7789 driver, SPI interface.
-  Confirm pinout against your board's silkscreen/datasheet - modules vary.
-
-  Typical wiring (ESP32 VSPI):
-    Display pin   ESP32 pin
-    ------------  ---------
-    VCC           3.3V
-    GND           GND
-    SCL / SCK     GPIO18
-    SDA / MOSI    GPIO23
-    RES / RST     GPIO4
-    DC            GPIO2
-    CS            GPIO15
-    BLK (backlight) 3.3V (or a GPIO if you want PWM dimming)
-*/
-
 #include "icons.h"
 #include "menu.h"
 #include "joystickAndButtonInput.h"
-// 'seLOGO', 320x240px
 
 
 // Pin definitions - change these to match your wiring
